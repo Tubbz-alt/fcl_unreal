@@ -1,0 +1,3 @@
+/home/bp1/Documents/Unreal Projects/sc2/Source/sc2/sc2.Build.cs
+/home/bp1/Documents/Unreal Projects/sc2/Source/sc2.Target.cs
+/home/bp1/Documents/Unreal Projects/sc2/Source/sc2Editor.Target.cs

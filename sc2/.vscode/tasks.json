@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "sc2 Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Mac",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"IOS",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"HTML5",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"Linux",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"Shipping",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2 TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2 TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2",
+				"TVOS",
+				"Test",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Linux",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Linux",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2Editor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Linux",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Linux",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Linux",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2Editor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Linux",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Linux",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Linux",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2Editor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Linux",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Mac",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Mac",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2Editor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Mac",
+				"Debug",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Mac",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Mac",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2Editor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Mac",
+				"DebugGame",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Mac",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Mac",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"sc2Editor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "sc2Editor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"sc2Editor",
+				"Mac",
+				"Development",
+				"'/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/usr/local/src/UnrealEngine"
+			}
+		}
+	]
+}

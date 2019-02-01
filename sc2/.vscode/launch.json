@@ -1,0 +1,106 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "sc2 (Debug)",
+			"request": "launch",
+			"preLaunchTask": "sc2 Linux Debug Build",
+			"program": "/home/bp1/Documents/Unreal Projects/sc2/Binaries/Linux/sc2-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/usr/local/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "sc2 (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "sc2 Linux DebugGame Build",
+			"program": "/home/bp1/Documents/Unreal Projects/sc2/Binaries/Linux/sc2-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/usr/local/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "sc2 (Development)",
+			"request": "launch",
+			"preLaunchTask": "sc2 Linux Development Build",
+			"program": "/home/bp1/Documents/Unreal Projects/sc2/Binaries/Linux/sc2",
+			"args": [
+			],
+			"cwd": "/usr/local/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "sc2 (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "sc2 Linux Shipping Build",
+			"program": "/home/bp1/Documents/Unreal Projects/sc2/Binaries/Linux/sc2-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/usr/local/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "sc2 (Test)",
+			"request": "launch",
+			"preLaunchTask": "sc2 Linux Test Build",
+			"program": "/home/bp1/Documents/Unreal Projects/sc2/Binaries/Linux/sc2-Linux-Test",
+			"args": [
+			],
+			"cwd": "/usr/local/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "sc2Editor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "sc2Editor Linux Debug Build",
+			"program": "/usr/local/src/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject",
+				"-debug"
+			],
+			"cwd": "/usr/local/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "sc2Editor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "sc2Editor Linux DebugGame Build",
+			"program": "/usr/local/src/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject",
+				"-debug"
+			],
+			"cwd": "/usr/local/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "sc2Editor (Development)",
+			"request": "launch",
+			"preLaunchTask": "sc2Editor Linux Development Build",
+			"program": "/usr/local/src/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject"
+			],
+			"cwd": "/usr/local/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/usr/local/src/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/bp1/Documents/Unreal Projects/sc2/sc2.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/usr/local/src/UnrealEngine"
+		}
+	]
+}

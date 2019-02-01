@@ -1,0 +1,9 @@
+{
+	"files.exclude": {
+		"/home/bp1/Documents/Unreal Projects/sc2/.vscode": true,
+		"/home/bp1/Documents/Unreal Projects/sc2/Content": true,
+		"/home/bp1/Documents/Unreal Projects/sc2/DerivedDataCache": true,
+		"/home/bp1/Documents/Unreal Projects/sc2/Intermediate": true,
+		"/home/bp1/Documents/Unreal Projects/sc2/Saved": true
+	}
+}
